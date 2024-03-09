@@ -2,7 +2,6 @@ package main
 
 import (
 	"flag"
-	"fmt"
 	"log"
 )
 
@@ -14,7 +13,4 @@ func main() {
 		// TODO: show help instead
 		log.Fatal("Please specify a subcommand.")
 	}
-	cmd, args := args[0], args[1:]
-
-	fmt.Printf("Command: %s\n", cmd)
 }
