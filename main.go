@@ -1,3 +1,5 @@
+// Copyright (c) Div Shekhar & AUTHORS
+
 package main
 
 import (
@@ -18,11 +20,9 @@ func main() {
 				},
 			},
 			{
-				Name:  "status",
-				Usage: "Show server configuration and current status",
-				Action: func(cCtx *cli.Context) error {
-					return cli.Exit("Not Implemented", 1)
-				},
+				Name:   "status",
+				Usage:  "Show current configuration and https server status",
+				Action: status,
 			},
 		},
 	}
